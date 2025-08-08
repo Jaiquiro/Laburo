@@ -61,7 +61,11 @@ export default function TabLayout() {
           ),
         }}
       />
-
+          {/* Pestaña: Mensajes (mensajes) */}
+      <Tabs.Screen
+        name="mensajes"
+        options={{ title: 'Mensajes', tabBarIcon: ({ color }) => <MaterialIcons name="chat" size={28} color={color} /> }}
+      />
       {/* Pestaña: Profile (profile.tsx) ✅ ESTA ES LA QUE FALTABA */}
       <Tabs.Screen
         name="profile"
